@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_dialog_round"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/filter"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@id/tv_thn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:drawableStart="@drawable/ic_date_white_24dp"
+        android:drawableTint="#FFA726"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:text="@string/tahun"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" tools:targetApi="m" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tipe_barang"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@id/spin_tipebrg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginStart="8dp"
+            android:popupBackground="#FFA726"
+            tools:targetApi="lollipop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tipe_invoice"
+            android:textSize="16sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:checkedButton="@id/radio_non"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@id/radio_semua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rb_semua"
+                android:textSize="12sp"
+                android:buttonTint="#FFA726"
+                tools:targetApi="lollipop"/>
+
+            <RadioButton
+                android:id="@id/radio_non"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rb_non_cabang"
+                android:textSize="12sp"
+                android:buttonTint="#FFA726"
+                tools:targetApi="lollipop"/>
+
+            <RadioButton
+                android:id="@id/radio_cabang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_cabang"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="134dp"
+                android:buttonTint="#FFA726"
+                tools:targetApi="lollipop"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_marker"
+            android:tint="#FFA726"
+            tools:ignore="ContentDescription"/>
+
+        <Spinner
+            android:id="@id/spin_kota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:popupBackground="#FFA726"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@id/btn_cancel"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textColor="@color/flatui_asbestos" />
+
+
+        <Button
+            android:id="@id/btn_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFA726"
+            android:text="@string/apply" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,48 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.appcompat = '1.2.0'
+    ext.core_version = '1.3.2'
+    ext.android_material = '1.3.0'
+    ext.gridlayout_version = '1.0.0'
+    ext.cardview_version = '1.0.0'
+    ext.vectordrawable_version = '1.1.0'
+    ext.legacy_support_core_util_version = '1.0.0'
+    ext.kotlin_version = '1.4.31'
+    ext.firebase = '17.6.0'
+    ext.anko_version = '0.10.8'
+    ext.android_design = '1.2.0'
+    ext.constraint_layout = '2.0.4'
+    ext.multidex = '2.0.1'
+    ext.play_service = '17.0.1'
+    ext.play_service_basement = '17.6.0'
+
+    repositories {
+        google()
+        maven { url 'https://maven.google.com' }
+        maven { url "https://jitpack.io" }
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.0'
+        classpath 'com.google.gms:google-services:4.3.5'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.5.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://maven.google.com" }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

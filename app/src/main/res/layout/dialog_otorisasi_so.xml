@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bottom_dialog_round"
+    android:padding="32dp">
+
+    <AutoCompleteTextView
+        android:id="@+id/act_alasan_oto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:inputType="text"
+        android:hint="@string/alasan_oto"
+        android:background="@drawable/edittext_round"
+        tools:ignore="LabelFor"/>
+
+    <ImageView
+        android:id="@+id/select_alasan_so"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        app:srcCompat="@drawable/ic_down"
+        tools:ignore="ContentDescription"
+        android:layout_alignTop="@id/act_alasan_oto"
+        android:layout_alignBottom="@id/act_alasan_oto"
+        android:layout_alignEnd="@id/act_alasan_oto"/>
+
+    <EditText
+        android:id="@+id/edt_tgl_alasan"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/edittext_round"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:hint="@string/tgl"
+        android:focusableInTouchMode="false"
+        android:inputType="text"
+        tools:ignore="Autofill,LabelFor"
+        android:layout_below="@id/act_alasan_oto"/>
+
+    <EditText
+        android:id="@id/edt_ket"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/edittext_round"
+        android:padding="8dp"
+        android:layout_marginTop="14dp"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:hint="@string/ket_oto_odar"
+        android:inputType="text"
+        tools:ignore="Autofill,LabelFor"
+        android:layout_below="@id/edt_tgl_alasan"/>
+
+    <Button
+        android:id="@id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorAccent"
+        android:text="@string/ok"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/edt_ket"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:background="@android:color/white"
+        android:text="@string/cancel"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_toStartOf="@id/btn_ok"
+        android:layout_below="@id/edt_ket"/>
+
+</RelativeLayout>

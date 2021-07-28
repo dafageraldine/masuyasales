@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/cv_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@id/line1"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@id/img_produk"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:padding="4dp"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:id="@id/tv_nmbrg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:id="@id/tv_kdbrg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@id/tv_satuan"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp"
+                        android:paddingEnd="8dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <TextView
+                        android:id="@id/tv_qty"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="4dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:text="@string/hasil_timbangan"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@id/tv_satuan_timb"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="12sp"
+                        android:gravity="center_vertical|end"
+                        android:paddingEnd="8dp"
+                        tools:ignore="RtlSymmetry"/>
+
+                    <EditText
+                        android:id="@id/edt_qty_timb"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:textSize="12sp"
+                        android:background="@drawable/edittext_round"
+                        android:paddingEnd="4dp"
+                        tools:ignore="LabelFor,RtlSymmetry,UnusedAttribute"
+                        android:inputType="numberDecimal"
+                        android:digits="0123456789.,"
+                        android:imeOptions="actionDone"
+                        android:autofillHints="0" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@id/btn_simpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_save_black"
+                    android:text="@string/simpan_hasil_timbangan"
+                    app:srcCompat="@drawable/ic_save_black"
+                    android:tint="@color/colorAccent"
+                    tools:ignore="ContentDescription"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

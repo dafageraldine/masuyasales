@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_light_disabled">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <ImageView
+        android:id="@id/bg_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.2"
+        android:scaleType="centerCrop"
+        android:scaleX="1.0"
+        android:scaleY="1.0"
+        android:src="@drawable/bg2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bg2"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bg_image"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <TextView
+        android:id="@id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:textColor="#ffff"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/bg_image"
+        app:layout_constraintStart_toStartOf="@+id/bg_image"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#ffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:paddingStart="80dp"
+        android:paddingTop="50dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/logo1"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:text="@string/device"
+            android:textAlignment="gravity"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/tv1"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_smartphone_black_24"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@id/tv_merk"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@id/tv1"
+            android:layout_toEndOf="@id/logo1"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:textAlignment="gravity"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_merk"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/logo1"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:text="@string/android_version"
+            android:textAlignment="gravity"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/tv3"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_android_black_24"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@id/tv_android_versi"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@id/tv3"
+            android:layout_toEndOf="@id/logo2"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:textAlignment="gravity"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_android_versi"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/logo1"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:text="@string/sdk_version"
+            android:textAlignment="gravity"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+        <ImageView
+            android:id="@+id/logo3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/tv4"
+            android:src="@drawable/sdk"
+            android:tint="@color/colorAccent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@id/tv_android_sdk"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@id/tv4"
+            android:layout_toEndOf="@id/logo3"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:textAlignment="gravity"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_android_sdk"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/logo1"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:text="@string/network_info"
+            android:textAlignment="gravity"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+        <ImageView
+            android:id="@+id/logo4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/tv5"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_wifi_black_24"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@id/tv_network"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@id/tv5"
+            android:layout_toEndOf="@id/logo4"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:textAlignment="gravity"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@id/btn_change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_network"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/btn_corner_radius_theme"
+            android:padding="10dp"
+            android:text="@string/change_password"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@id/btn_logout"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_change_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="@string/logout"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_red_light" />
+
+        <ProgressBar
+            android:id="@id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

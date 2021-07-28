@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="8dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@id/tv_kdbrg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@id/tv_nmbrg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9000"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_kdbrg" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@id/vp_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_nmbrg" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#2000"
+            app:layout_constraintBottom_toBottomOf="@id/vp_image"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@id/tv_brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/brand"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_nmtype"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vp_image"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_nmtype"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/tipe_barang"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_brand"
+            app:layout_constraintTop_toBottomOf="@id/vp_image"
+            tools:ignore="SmallSp" />
+
+        <AutoCompleteTextView
+            android:id="@id/edt_brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/edittext_round"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/edt_nmtype"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_brand"
+            tools:ignore="Autofill,LabelFor" />
+
+        <ImageView
+            android:id="@id/select_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_down"
+            tools:ignore="ContentDescription"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="@id/edt_brand"
+            app:layout_constraintTop_toBottomOf="@id/tv_brand"/>
+
+        <EditText
+            android:id="@id/edt_nmtype"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/edittext_round"
+            android:editable="false"
+            android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_brand"
+            app:layout_constraintTop_toBottomOf="@id/tv_nmtype"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@id/tv_jenis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="Jenis"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_packing3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_brand"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_packing3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="Packing 3"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_jenis"
+            app:layout_constraintTop_toBottomOf="@id/edt_nmtype"
+            tools:ignore="SmallSp" />
+
+        <EditText
+            android:id="@id/edt_jenis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/edittext_round"
+            android:editable="false"
+            android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/edt_packing3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_jenis"
+            tools:ignore="Autofill,LabelFor" />
+
+        <EditText
+            android:id="@id/edt_packing3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/edittext_round"
+            android:editable="false"
+            android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_jenis"
+            app:layout_constraintTop_toBottomOf="@id/tv_packing3"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@id/tv_hrg_exc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="Harga Jual Exclude Ppn"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_tax"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_jenis"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_tax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="Jenis Tax"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_hrg_exc"
+            app:layout_constraintTop_toBottomOf="@id/edt_packing3"
+            tools:ignore="SmallSp" />
+
+        <EditText
+            android:id="@id/edt_hrg_exc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/edittext_round"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/edt_tax"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_hrg_exc"
+            tools:ignore="Autofill,LabelFor" />
+
+        <EditText
+            android:id="@id/edt_tax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/edittext_round"
+            android:editable="false"
+            android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_hrg_exc"
+            app:layout_constraintTop_toBottomOf="@id/tv_tax"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@id/tv_hrg_inc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="Harga Jual Include Ppn"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_harga"
+            app:layout_constraintTop_toBottomOf="@id/edt_hrg_exc"
+            tools:ignore="SmallSp" />
+
+        <EditText
+            android:id="@id/edt_hrg_inc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/edittext_round"
+            android:editable="false"
+            android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_harga"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_hrg_inc"
+            tools:ignore="Autofill,LabelFor" />
+
+        <Button
+            android:id="@id/btn_harga"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bottom_price"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_hrg_exc"
+            app:layout_constraintTop_toBottomOf="@id/edt_tax" />
+
+        <TextView
+            android:id="@id/tv_mton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="Metrix Ton"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_mkubik"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_hrg_inc"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_mkubik"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="Meter Kubik"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toEndOf="@id/tv_mton"
+            app:layout_constraintTop_toBottomOf="@id/edt_hrg_inc"
+            tools:ignore="SmallSp" />
+
+        <EditText
+            android:id="@id/edt_mton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/edittext_round"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/edt_mkubik"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_mton"
+            tools:ignore="Autofill,LabelFor" />
+
+        <EditText
+            android:id="@id/edt_mkubik"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/edittext_round"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_mton"
+            app:layout_constraintTop_toBottomOf="@id/tv_mkubik"
+            tools:ignore="Autofill,LabelFor" />
+
+        <Button
+            android:id="@id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/simpan"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_mton"
+            android:visibility="gone"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

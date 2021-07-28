@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/bottomSheetEvaluasiDetailTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="100dp"
+            android:layout_height="5dp"
+            android:background="@color/colorSecondary"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@id/tv_kdbrg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_line"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@id/tv_tgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_kdbrg"
+            android:layout_marginTop="8dp"/>
+
+        <com.evrencoskun.tableview.TableView
+            android:id="@id/container_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tgl"
+            android:layout_marginTop="8dp"
+            app:column_header_height="@dimen/table_view_cell_height"
+            app:row_header_width="@dimen/row_header_width"
+            app:shadow_color="@color/table_view_default_selected_background_color"
+            app:selected_color="@color/table_view_default_selected_background_color" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

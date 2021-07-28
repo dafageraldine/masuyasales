@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/lv_barang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/flatui_peter_river"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtotal"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_subtotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="10sp"
+            android:gravity="center|end"
+            android:layout_marginEnd="10dp"
+            android:textColor="@android:color/white"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/flatui_peter_river"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@string/disc_faktur"
+            android:textSize="10sp"
+            android:layout_marginStart="10dp"
+            android:gravity="center|start"
+            android:textColor="@android:color/white"
+            tools:ignore="SmallSp" />
+
+        <EditText
+            android:id="@id/edt_discfak_persen"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textAlignment="textEnd"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:digits="0123456789.,"
+            android:imeOptions="actionDone"
+            android:textSize="8sp"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/white"
+            tools:ignore="Autofill,LabelFor,SmallSp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="%"
+            android:textSize="10sp"
+            android:gravity="center|start"
+            android:textColor="@android:color/white"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_discfak_total"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:text="0"
+            android:textSize="10sp"
+            android:gravity="center|end"
+            android:layout_marginEnd="10dp"
+            android:textColor="@android:color/white"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/flatui_peter_river"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="@string/ppn"
+            android:textSize="10sp"
+            android:layout_marginStart="10dp"
+            android:gravity="center|start"
+            android:textColor="@android:color/white"
+            tools:ignore="SmallSp" />
+
+        <EditText
+            android:id="@id/edt_ppn_persen"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textAlignment="textEnd"
+            android:inputType="numberDecimal"
+            android:text="10"
+            android:digits="0123456789.,"
+            android:imeOptions="actionDone"
+            android:textSize="8sp"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/white"
+            android:editable="false"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="%"
+            android:textSize="10sp"
+            android:gravity="center|start"
+            android:textColor="@android:color/white"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_ppn_total"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:text="0"
+            android:textSize="10sp"
+            android:gravity="center|end"
+            android:layout_marginEnd="10dp"
+            android:textColor="@android:color/white"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/flatui_peter_river"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/total"
+            android:textSize="10sp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_total"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="10sp"
+            android:gravity="center|end"
+            android:layout_marginEnd="10dp"
+            android:textColor="@android:color/white"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+</LinearLayout>

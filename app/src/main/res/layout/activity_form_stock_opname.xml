@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yusuffahrudin.masuyamobileapp.stockopname.FormStockOpnameActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            fab:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_form_stock_opname" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:menu_fab_size="normal"
+        fab:menu_showShadow="true"
+        fab:menu_shadowColor="#66CFD8DC"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_colorNormal="#FFD600"
+        fab:menu_colorPressed="#03A9F4"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@drawable/ic_list_black"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_colorNormal="#1E88E5"
+        fab:menu_labels_colorPressed="#90CAF9"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="down"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="120dp"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_fab_show_animation="@anim/show_from_top"
+        fab:menu_fab_hide_animation="@anim/hide_to_top">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@id/fab_unpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_edit"
+            fab:fab_colorNormal="#6200EA"
+            fab:fab_colorPressed="#03A9F4"
+            fab:fab_size="mini"
+            fab:fab_label="Unpost" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@id/fab_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_edit"
+            fab:fab_colorNormal="#64DD17"
+            fab:fab_colorPressed="#03A9F4"
+            fab:fab_size="mini"
+            fab:fab_label="Post" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@id/fab_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            fab:fab_colorNormal="#d50000"
+            fab:fab_colorPressed="#03A9F4"
+            fab:fab_size="mini"
+            fab:fab_label="Close" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@id/fab_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_edit"
+            fab:fab_colorNormal="#FF6D00"
+            fab:fab_colorPressed="#03A9F4"
+            fab:fab_size="mini"
+            fab:fab_label="Edit" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@id/fab_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_save"
+            fab:fab_colorNormal="#64DD17"
+            fab:fab_colorPressed="#03A9F4"
+            fab:fab_size="mini"
+            fab:fab_label="Save" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

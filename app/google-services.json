@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "180247819080",
+    "firebase_url": "https://masuyamobileapp-a230b.firebaseio.com",
+    "project_id": "masuyamobileapp-a230b",
+    "storage_bucket": "masuyamobileapp-a230b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180247819080:android:b880b4dbe29c9af9",
+        "android_client_info": {
+          "package_name": "com.yusuffahrudin.masuyamobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180247819080-ckt87grsvfmavv7hd26ud5j534ladjra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yusuffahrudin.masuyamobileapp",
+            "certificate_hash": "4d5769090540a89a359a3951e9799499c89b5bdf"
+          }
+        },
+        {
+          "client_id": "180247819080-2plsr4d74fc62kolao05tvhe7308la33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA0bXHvLwakwkCtGDlxhLJz1dIms0IY_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180247819080-2plsr4d74fc62kolao05tvhe7308la33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

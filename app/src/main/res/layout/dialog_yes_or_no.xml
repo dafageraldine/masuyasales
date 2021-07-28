@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    style="@style/Transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bottom_dialog_round"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/primary_text_light"
+            android:text="@string/peringatan"
+            android:layout_centerHorizontal="true"/>
+
+        <ScrollView
+            android:id="@id/srollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_below="@id/title">
+
+            <TextView
+                android:id="@id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:textSize="16sp"
+                android:gravity="center"/>
+
+        </ScrollView>
+
+        <Button
+            android:id="@id/btn_ya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/ya"
+            android:textColor="@android:color/white"
+            android:background="@color/flatui_nephritis"
+            android:layout_below="@id/srollView"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+            android:id="@id/btn_tidak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:text="@string/tidak"
+            android:textColor="@color/flatui_alizarin"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_below="@id/srollView"
+            android:layout_toStartOf="@id/btn_ya"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_error_48"
+        android:background="@drawable/circular_tick"
+        android:layout_gravity="center_horizontal|top"
+        tools:ignore="ContentDescription" />
+
+</FrameLayout>

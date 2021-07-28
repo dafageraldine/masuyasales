@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@id/action_create_sales_order"
+        android:title="@string/create_sales_order"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_sales_order_white_100"
+        android:iconTint="@android:color/black"
+        app:showAsAction="never"/>
+
+</menu>

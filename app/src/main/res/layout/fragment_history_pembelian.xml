@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.yusuffahrudin.masuyamobileapp.historypenjualan.HistoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@id/btn_date_dari"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/tgl_awal"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@color/colorAccent"/>
+        
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+        <Button
+            android:id="@id/btn_date_sampai"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/tgl_akhir"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@id/edt_brg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/kode_nama_barang"
+        android:textAlignment="center"
+        android:singleLine="true"
+        style="@style/editText_style"
+        android:autofillHints=""
+        android:inputType="" tools:targetApi="o" />
+
+    <EditText
+        android:id="@id/edt_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/kode_nama_supplier"
+        android:textAlignment="center"
+        android:singleLine="true"
+        style="@style/editText_style"
+        android:autofillHints=""
+        android:inputType="" tools:targetApi="o" />
+
+    <Button
+        android:id="@id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        style="@style/button_style"
+        android:text="@string/search" />
+
+</LinearLayout>

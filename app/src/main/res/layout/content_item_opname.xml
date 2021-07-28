@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f4f4f4"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.yusuffahrudin.masuyamobileapp.stockopname.ItemOpnameActivity"
+    tools:showIn="@layout/activity_item_opname">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/lv_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@id/btn_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_sort_by_size"
+            android:text="@string/sort"
+            android:background="@color/flatui_peter_river"
+            android:textColor="@android:color/white"
+            tools:ignore="ButtonStyle,NestedWeights" />
+
+        <Button
+            android:id="@id/btn_filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_filter_white"
+            android:text="@string/filter"
+            android:background="@color/flatui_peter_river"
+            android:textColor="@android:color/white"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

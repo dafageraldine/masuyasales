@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@id/tv_nomor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        android:fontFamily="casual"
+        app:layout_constraintEnd_toStartOf="@+id/tv_tgl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="3"/>
+
+    <TextView
+        android:id="@id/tv_tgl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/flatui_nephritis"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/tv_nomor"
+        app:layout_constraintEnd_toStartOf="@id/tv_discfak"
+        app:layout_constraintTop_toTopOf="@id/tv_nomor"
+        app:layout_constraintHorizontal_weight="3"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@id/tv_noPO"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/tv_nomor"
+        app:layout_constraintEnd_toStartOf="@id/tv_discfak"
+        app:layout_constraintTop_toBottomOf="@id/tv_tgl"
+        app:layout_constraintBottom_toBottomOf="@id/tv_nomor"
+        app:layout_constraintHorizontal_weight="3"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@id/tv_discfak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        app:layout_constraintStart_toEndOf="@+id/tv_tgl"
+        app:layout_constraintEnd_toStartOf="@id/tv_total"
+        app:layout_constraintTop_toTopOf="@id/tv_tgl"
+        app:layout_constraintBottom_toBottomOf="@id/tv_noPO"
+        app:layout_constraintHorizontal_weight="1.5" />
+
+    <TextView
+        android:id="@id/tv_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:fontFamily="serif"
+        app:layout_constraintStart_toEndOf="@+id/tv_discfak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_discfak"
+        app:layout_constraintBottom_toBottomOf="@id/tv_discfak"
+        app:layout_constraintHorizontal_weight="2.5" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#3498DB"
+        app:layout_constraintTop_toTopOf="@id/tv_cetak"
+        app:layout_constraintBottom_toBottomOf="@id/tv_cetak"
+        app:layout_constraintStart_toStartOf="@id/tv_cetak"
+        app:layout_constraintEnd_toEndOf="@id/tv_lunas"/>
+
+    <TextView
+        android:id="@id/tv_cetak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableTop="@drawable/icons8_print0"
+        android:scaleX="0.8"
+        android:scaleY="0.7"
+        android:letterSpacing="0.04"
+        android:text="@string/invoice_dicetak"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@id/tv_siap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_noPO"
+        tools:ignore="SmallSp,UnusedAttribute" />
+
+    <TextView
+        android:id="@id/tv_siap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableTop="@drawable/icons8_packing0"
+        android:scaleX="0.7"
+        android:scaleY="0.6"
+        android:letterSpacing="0.04"
+        android:text="@string/barang_disiapkan"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@id/tv_kirim"
+        app:layout_constraintStart_toEndOf="@id/tv_cetak"
+        app:layout_constraintTop_toBottomOf="@id/tv_noPO"
+        tools:ignore="SmallSp,UnusedAttribute" />
+
+    <TextView
+        android:id="@id/tv_kirim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableTop="@drawable/icons8_truck0"
+        android:scaleX="0.8"
+        android:scaleY="0.9"
+        android:letterSpacing="0.04"
+        android:text="@string/proses_kirim"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@id/tv_terima"
+        app:layout_constraintStart_toEndOf="@id/tv_siap"
+        app:layout_constraintTop_toBottomOf="@id/tv_noPO"
+        tools:ignore="SmallSp,UnusedAttribute" />
+
+    <TextView
+        android:id="@id/tv_terima"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableTop="@drawable/icons8_goods_receive0"
+        android:scaleX="0.8"
+        android:scaleY="0.7"
+        android:letterSpacing="0.04"
+        android:text="@string/barang_diterima"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@id/tv_kembali"
+        app:layout_constraintStart_toEndOf="@id/tv_kirim"
+        app:layout_constraintTop_toBottomOf="@id/tv_noPO"
+        tools:ignore="SmallSp,UnusedAttribute" />
+
+    <TextView
+        android:id="@id/tv_kembali"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableTop="@drawable/icons8_document_return0"
+        android:scaleX="0.8"
+        android:scaleY="0.7"
+        android:letterSpacing="0.04"
+        android:text="@string/dokumen_kembali"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@id/tv_lunas"
+        app:layout_constraintStart_toEndOf="@id/tv_terima"
+        app:layout_constraintTop_toBottomOf="@id/tv_noPO"
+        tools:ignore="SmallSp,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/tv_lunas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableTop="@drawable/icons8_invoice_paid0"
+        android:scaleX="0.8"
+        android:scaleY="0.7"
+        android:letterSpacing="0.04"
+        android:text="@string/invoice_lunas"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_kembali"
+        app:layout_constraintTop_toBottomOf="@id/tv_noPO"
+        tools:ignore="SmallSp,UnusedAttribute" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

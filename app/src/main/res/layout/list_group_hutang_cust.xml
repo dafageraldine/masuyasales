@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/colorSecondary">
+
+    <TextView
+        android:id="@id/tv_nobukti"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="0dp"
+        app:layout_constraintVertical_weight="0.7"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_tgl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_total"/>
+
+    <TextView
+        android:id="@id/tv_tgl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="0dp"
+        app:layout_constraintVertical_weight="0.3"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintTop_toBottomOf="@id/tv_nobukti"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_bayar"/>
+
+    <TextView
+        android:id="@id/tv_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:textAlignment="textEnd"
+        app:layout_constraintVertical_weight="0.5"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_bayar"
+        app:layout_constraintStart_toEndOf="@id/tv_nobukti"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@id/tv_bayar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:textAlignment="textEnd"
+        app:layout_constraintVertical_weight="0.5"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintTop_toBottomOf="@id/tv_total"
+        app:layout_constraintBottom_toTopOf="@id/tv_sisa"
+        app:layout_constraintStart_toEndOf="@id/tv_nobukti"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@id/tv_sisa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:textColor="@color/flatui_pomegranate"
+        android:textAlignment="textEnd"
+        app:layout_constraintVertical_weight="0.5"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintTop_toBottomOf="@id/tv_bayar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_tgl"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

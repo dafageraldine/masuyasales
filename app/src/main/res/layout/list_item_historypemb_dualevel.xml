@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@id/tv_kdbrg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="cursive"
+        app:layout_constraintHorizontal_weight="0.4"
+        app:layout_constraintEnd_toStartOf="@id/tv_nobukti"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NestedWeights" />
+
+    <TextView
+        android:id="@id/tv_nobukti"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:fontFamily="casual"
+        app:layout_constraintHorizontal_weight="0.3"
+        app:layout_constraintEnd_toStartOf="@id/tv_kdgd"
+        app:layout_constraintStart_toEndOf="@id/tv_kdbrg"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@id/tv_tgl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toStartOf="@id/tvTglExp"
+        app:layout_constraintStart_toEndOf="@id/tv_kdbrg"
+        app:layout_constraintTop_toBottomOf="@id/tv_nobukti"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@id/tv_kdgd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/flatui_pomegranate"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:fontFamily="casual"
+        app:layout_constraintHorizontal_weight="0.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_nobukti"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/tvTglExp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/flatui_nephritis"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_tgl"
+        app:layout_constraintTop_toBottomOf="@id/tv_kdgd"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@id/tv_nmbrg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        android:paddingStart="0dp"
+        android:paddingEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@id/tv_satuan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTglExp"
+        app:layout_constraintHorizontal_weight="0.6"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@id/tv_satuan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_nmbrg"
+        app:layout_constraintTop_toBottomOf="@id/tvTglExp"
+        app:layout_constraintHorizontal_weight="0.15"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@id/tv_harga"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toStartOf="@id/tvHargaNet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nmbrg"
+        app:layout_constraintHorizontal_weight="0.3"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/tvHargaNet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toStartOf="@id/tv_qty"
+        app:layout_constraintStart_toEndOf="@id/tv_harga"
+        app:layout_constraintTop_toBottomOf="@id/tv_nmbrg"
+        app:layout_constraintHorizontal_weight="0.3"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@id/tv_diskon1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toStartOf="@id/tv_diskon2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_harga"
+        app:layout_constraintHorizontal_weight="0.2"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@id/tv_diskon2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toStartOf="@id/tv_diskon3"
+        app:layout_constraintStart_toEndOf="@id/tv_diskon1"
+        app:layout_constraintTop_toBottomOf="@id/tv_harga"
+        app:layout_constraintHorizontal_weight="0.2"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@id/tv_diskon3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        android:textAlignment="textEnd"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toStartOf="@id/tv_qty"
+        app:layout_constraintStart_toEndOf="@id/tv_diskon2"
+        app:layout_constraintTop_toBottomOf="@id/tv_harga"
+        app:layout_constraintHorizontal_weight="0.2"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/tv_qty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textAlignment="textEnd"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_diskon3"
+        app:layout_constraintTop_toBottomOf="@id/tv_nmbrg"
+        app:layout_constraintHorizontal_weight="0.4"
+        tools:ignore="SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

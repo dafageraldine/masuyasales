@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yusuffahrudin.masuyamobileapp.updatepricelist.UpdatePriceBrgActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@id/filter_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:padding="8dp"
+        android:layout_below="@id/appbar">
+
+        <androidx.cardview.widget.CardView
+            android:id="@id/filter_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:focusable="true" tools:targetApi="lollipop">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@id/btn_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    app:tint="@color/flatui_asbestos"
+                    app:srcCompat="@drawable/ic_filter_white"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/btn_filter"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    tools:ignore="RelativeOverlap">
+
+                    <TextView
+                        android:id="@id/tv_filter1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter"
+                        android:textColor="@color/flatui_asbestos"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@id/tv_filter2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/divide"
+                        android:textColor="@color/flatui_asbestos"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/btn_clear_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    app:tint="@color/flatui_asbestos"
+                    app:srcCompat="@drawable/places_ic_clear"
+                    tools:ignore="ContentDescription"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <!-- Shadow below toolbar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/filter_bar_container"
+        android:background="@drawable/shadow" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/rv_pricelist_brg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filter_bar_container"
+        android:layout_marginBottom="50dp"
+        android:scrollbars="vertical"
+        android:radius="10dip"
+        android:background="@color/colorPrimary"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"/>
+
+    <Button
+        android:id="@id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/simpan"
+        android:background="@color/table_view_default_selected_background_color"/>
+
+    <ProgressBar
+        android:id="@id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@id/edt_barcode"
+                android:layout_width="match_parent"
+                android:translationY="4dp"
+                android:editable="false"
+                android:hint="@string/barcode_barang"
+                style="@style/editText_style"
+                tools:ignore="Autofill,TextFields" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@id/btn_scan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:text="@string/scan"
+            style="@style/button_style"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/simpan"
+        style="@style/button_style"/>
+
+</LinearLayout>

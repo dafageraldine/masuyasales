@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    tools:context="com.yusuffahrudin.masuyamobileapp.stockopname.FilterStockOpname"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                android:src="@drawable/masuyalogo"
+                android:layout_gravity="end"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/tv_close"
+                android:background="@android:drawable/ic_delete"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:textSize="24sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@id/btn_tgl_awal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tgl_awal"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@id/btn_tgl_akhir"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tgl_akhir"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/edt_brg"
+                android:hint="@string/kode_nama_barang"
+                android:textColorHint="@color/colorPrimary"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:singleLine="true"
+                tools:ignore="Autofill,TextFields" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@id/cb_open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/open"/>
+
+        <CheckBox
+            android:id="@id/cb_close_withpost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/close_with_posting"/>
+
+        <CheckBox
+            android:id="@id/cb_close_withoutpost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/close_without_posting"/>
+
+        <Button
+            android:id="@id/btn_apply"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/apply"/>
+
+    </LinearLayout>
+
+</LinearLayout>

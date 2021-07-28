@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    style="@style/Transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bottom_dialog_round"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@id/title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/primary_text_light"
+            android:layout_marginTop="48dp"
+            android:text="@string/peringatan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="32dp"
+            android:textSize="16sp"
+            android:layout_marginRight="32dp"
+            android:id="@id/tv_message"
+            android:gravity="center" />
+
+        <Button
+            android:id="@id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/white"
+            android:background="#F1C40F" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_error_48"
+        android:background="@drawable/circular_tick"
+        android:layout_gravity="center_horizontal|top"
+        tools:ignore="ContentDescription" />
+
+</FrameLayout>

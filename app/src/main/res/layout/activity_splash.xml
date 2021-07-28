@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yusuffahrudin.masuyamobileapp.SplashActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg1"
+        android:scaleX="1.0"
+        android:scaleY="1.0"
+        android:alpha="0.6"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+    <ImageView
+        android:id="@id/img_logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/masuyalogo"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

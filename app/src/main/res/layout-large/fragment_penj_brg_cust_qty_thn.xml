@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    tools:context=".laporan.PenjBrgCustQtyThnFragment">
+
+    <LinearLayout
+        android:id="@id/filter_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:layout_marginTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@id/filter_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:focusable="true" tools:targetApi="lollipop">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@id/btn_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:tint="@color/flatui_asbestos"
+                    app:srcCompat="@drawable/ic_filter_white"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/btn_filter"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@id/tv_filter1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tipe_barang"
+                        android:textColor="@color/flatui_asbestos"
+                        android:textSize="14sp"
+                        tools:text="@string/filter" />
+
+                    <TextView
+                        android:id="@id/tv_filter2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter"
+                        android:textColor="@color/flatui_asbestos"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/btn_clear_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:tint="@color/flatui_asbestos"
+                    app:srcCompat="@drawable/places_ic_clear"
+                    tools:ignore="ContentDescription"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <!-- Shadow below toolbar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/filter_bar_container"
+        android:background="@drawable/shadow" />
+
+    <com.evrencoskun.tableview.TableView
+        android:id="@id/container_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filter_bar_container"
+        android:layout_marginTop="4dp"
+        app:column_header_height="@dimen/table_view_cell_height"
+        app:row_header_width="@dimen/row_header_width"
+        app:shadow_color="@color/table_view_default_selected_background_color"
+        app:selected_color="@color/table_view_default_selected_background_color">
+
+    </com.evrencoskun.tableview.TableView>
+
+    <ProgressBar
+        android:id="@id/progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

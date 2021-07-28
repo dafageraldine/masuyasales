@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_dialog_round"
+    android:padding="32dp">
+
+    <com.dev.materialspinner.MaterialSpinner
+        android:id="@id/spin_kota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:checkedButton="@id/radio_non"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@id/radio_semua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#FFA726"
+            android:text="@string/rb_semua"
+            android:textSize="12sp"
+            tools:targetApi="lollipop" />
+
+        <RadioButton
+            android:id="@id/radio_non"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#FFA726"
+            android:text="@string/rb_non_cabang"
+            android:textSize="12sp"
+            tools:targetApi="lollipop" />
+
+        <RadioButton
+            android:id="@id/radio_cabang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFA726"
+            android:text="@string/rb_cabang"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="134dp"
+            tools:targetApi="lollipop" />
+    </RadioGroup>
+
+    <Button
+        android:id="@id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:text="@string/search"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

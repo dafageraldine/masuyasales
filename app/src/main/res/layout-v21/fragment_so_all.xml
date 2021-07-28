@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".salesorder.SalesOrderActivity">
+
+    <TextView
+        android:text="@string/all_sales_order"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:id="@+id/section_label"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/rv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:listSelector="#999999"
+            android:cacheColorHint="#009999"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorAccent"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"/>
+
+</RelativeLayout>

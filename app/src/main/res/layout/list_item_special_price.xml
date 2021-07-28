@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/cv_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@id/tv_kdbrg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_blue_dark"
+            app:layout_constraintTop_toTopOf="@id/tv_tgl"
+            app:layout_constraintBottom_toBottomOf="@id/tv_nmbrg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_tgl"/>
+
+        <TextView
+            android:id="@id/tv_tgl"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:textAlignment="textEnd"
+            app:layout_constraintVertical_weight="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_nmbrg"
+            app:layout_constraintStart_toEndOf="@id/tv_kdbrg"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_nmbrg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="10sp"
+            android:textAlignment="textEnd"
+            android:layout_marginTop="4dp"
+            app:layout_constraintVertical_weight="0.5"
+            app:layout_constraintTop_toBottomOf="@id/tv_tgl"
+            app:layout_constraintBottom_toBottomOf="@id/tv_kdbrg"
+            app:layout_constraintStart_toEndOf="@id/tv_kdbrg"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_diskon1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="10sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_weight="0.2"
+            app:layout_constraintTop_toTopOf="@id/tv_satuan"
+            app:layout_constraintBottom_toTopOf="@id/tv_diskon2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_qtyKuota"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_diskon2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="10sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_weight="0.2"
+            app:layout_constraintTop_toBottomOf="@id/tv_diskon1"
+            app:layout_constraintBottom_toBottomOf="@id/tv_satuan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_diskon3"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_qtyKuota"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_weight="0.2"
+            app:layout_constraintTop_toTopOf="@id/tv_satuan"
+            app:layout_constraintBottom_toTopOf="@id/tv_diskon3"
+            app:layout_constraintStart_toEndOf="@id/tv_diskon1"
+            app:layout_constraintEnd_toStartOf="@id/tv_satuan"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_diskon3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="10sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_weight="0.2"
+            app:layout_constraintTop_toBottomOf="@id/tv_qtyKuota"
+            app:layout_constraintBottom_toBottomOf="@id/tv_satuan"
+            app:layout_constraintStart_toEndOf="@id/tv_diskon2"
+            app:layout_constraintEnd_toStartOf="@id/tv_satuan"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_satuan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="4dp"
+            app:layout_constraintHorizontal_weight="0.1"
+            app:layout_constraintTop_toBottomOf="@id/tv_nmbrg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_qtyKuota"
+            app:layout_constraintEnd_toStartOf="@id/tv_harga"/>
+
+        <TextView
+            android:id="@id/tv_harga"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textAlignment="textEnd"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintTop_toBottomOf="@id/tv_nmbrg"
+            app:layout_constraintBottom_toTopOf="@id/tv_tipe_price"
+            app:layout_constraintStart_toEndOf="@id/tv_satuan"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@id/tv_tipe_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintTop_toBottomOf="@id/tv_harga"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_satuan"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="SmallSp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

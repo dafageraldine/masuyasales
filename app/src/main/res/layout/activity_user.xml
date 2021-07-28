@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:padding="@dimen/activity_horizontal_margin" >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_user"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/userAkses"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/til_kota">
+
+            <AutoCompleteTextView
+                android:id="@id/spin_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_kota"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:hint="@string/kota">
+
+            <AutoCompleteTextView
+                android:id="@id/spin_kota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_level"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/til_user"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="8dp"
+            android:hint="Level">
+
+            <AutoCompleteTextView
+                android:id="@+id/spin_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@id/cb_hpp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/hpp"
+            android:layout_below="@id/til_level"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+        <CheckBox
+            android:id="@id/cb_bottom_price"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/bottom_price"
+            android:layout_below="@id/til_level"
+            android:layout_toEndOf="@id/cb_hpp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+        <Button
+            android:id="@id/btn_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_below="@id/cb_hpp"
+            android:text="@string/detail_hak_akses" />
+
+        <Button
+            android:id="@id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/simpan"
+            android:layout_alignParentBottom="true"
+            style="@style/button_style"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:id="@+id/bottomSheetEvaluasiLinechart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="100dp"
+            android:layout_height="5dp"
+            android:background="@color/colorSecondary"
+            android:layout_centerHorizontal="true"/>
+
+        <com.anychart.AnyChartView
+            android:id="@+id/chart_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view_line"
+            android:layout_marginTop="10dp"/>
+
+        <ProgressBar
+            android:id="@id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

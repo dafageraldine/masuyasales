@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplikasi Masuya Mobile V2</string>
+    <string name="title_bottom_navigation_sales">Penjualan</string>
+    <string name="title_bottom_navigation_warehouse">Gudang</string>
+    <string name="title_bottom_navigation_admin">Admin</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="log_in">Masuk</string>
+    <string name="tag_json_obj">json_obj_req</string>
+    <string name="rb_semua">Semua</string>
+    <string name="rb_non_cabang">Non cabang</string>
+    <string name="rb_cabang">Cabang</string>
+    <string name="app_version">Masuya V2</string>
+    <string name="tgl_awal">Tgl awal</string>
+    <string name="tgl_akhir">Tgl akhir</string>
+    <string name="kode_nama_barang">Kode / nama barang</string>
+    <string name="kode_nama_customer">Kode / nama customer</string>
+    <string name="kode_nama_sales">Kode / nama sales</string>
+    <string name="search">Cari</string>
+    <string name="filter">Filter</string>
+    <string name="tahun">Tahun</string>
+    <string name="tipe_barang">Tipe barang :</string>
+    <string name="tipe_invoice">Tipe invoice :</string>
+    <string name="cancel">Batal</string>
+    <string name="apply">TERAPKAN</string>
+    <string name="open_pdf">Buka PDF</string>
+    <string name="simpan_sales_order">Simpan sales order</string>
+    <string name="ppn">PPN</string>
+    <string name="pnbkp">PNBKP</string>
+    <string name="pbbs">PBBS</string>
+    <string name="simpan">SIMPAN</string>
+    <string name="kode_nama_supplier">Kode / nama supplier</string>
+    <string name="simpan_hasil_timbangan">Simpan hasil timbangan</string>
+    <string name="select_all">Pilih semua</string>
+    <string name="unselect_all">Batalkan semua</string>
+    <string name="batas_harga_rp">Batas harga(Rp)</string>
+    <string name="min">MIN</string>
+    <string name="max">MAKS</string>
+    <string name="divide">-</string>
+    <string name="terapkan">Terapkan</string>
+    <string name="reset">Pulihkan</string>
+    <string name="kode_barang">Kode barang</string>
+    <string name="nama_barang">Nama barang</string>
+    <string name="harga">Harga</string>
+    <string name="include_ppn">Termasuk Ppn</string>
+    <string name="next">Selanjutnya</string>
+    <string name="diskon_1">Disc 1</string>
+    <string name="diskon2">Disc 2</string>
+    <string name="diskon_3">Disc 3</string>
+    <string name="all_tipe_barang">Semua tipe barang</string>
+    <string name="nomor_so">Nomor SO</string>
+    <string name="status_pajak">Status pajak</string>
+    <string name="kode_gudang">Kode gudang</string>
+    <string name="tanggal_order">Tanggal order</string>
+    <string name="tanggal_kirim">Tanggal kirim</string>
+    <string name="nomor_po">Nomor PO</string>
+    <string name="order_by">Order oleh:</string>
+    <string name="foto_po_tidak_ditemukan">File PO tidak ditemukan…</string>
+    <string name="cetak_note">Cetak note</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="create_by">Dibuat oleh:</string>
+    <string name="oto_uc">Oto UC</string>
+    <string name="oto_ub">Oto UB</string>
+    <string name="oto_odar">Oto ODAR</string>
+    <string name="oto_odsl">Oto ODSL</string>
+    <string name="oto_by">Diotorisasi oleh</string>
+    <string name="required_oto_uc">Diperlukan otorisasi UC</string>
+    <string name="required_oto_ub">Diperlukan otorisasi UB</string>
+    <string name="required_oto_odar">Diperlukan otorisasi ODAR</string>
+    <string name="required_oto_odsl">Diperlukan otorisasi ODSL</string>
+    <string name="ket_oto_odar">Keterangan otorisasi ODAR</string>
+    <string name="ket_oto_odsl">Keterangan otorisasi ODSL</string>
+    <string name="telepon_1">Telepon 1</string>
+    <string name="telepon_2">Telepon 2</string>
+    <string name="kota">Kota</string>
+    <string name="saldo_piutang">Saldo piutang</string>
+    <string name="sales">Sales</string>
+    <string name="tampilkan_lokasi">Tampilkan lokasi</string>
+    <string name="simpan_koordinat">Simpan koordinat</string>
+    <string name="qty_kirim">Qty kirim</string>
+    <string name="qty_order">Qty order</string>
+    <string name="harganet">HargaNet</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="status_order">Status order</string>
+    <string name="status_kirim">Status kirim</string>
+    <string name="tgl_order">Tgl order</string>
+    <string name="tgl_kirim">Tgl kirim</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="disc_faktur">DiscFak</string>
+    <string name="total">Total</string>
+    <string name="update_pricelist_by">Update Pricelist by :</string>
+    <string name="barang">Barang</string>
+    <string name="cust">Customer</string>
+    <string name="history_penjualan">Histori Penjualan</string>
+    <string name="userAkses">Pengguna :</string>
+    <string name="detail_hak_akses">Detail hak akses</string>
+    <string name="bottom_price">Harga minimum</string>
+    <string name="hpp">HPP</string>
+    <string name="no_opname">No. Opname</string>
+    <string name="tgl">Tgl</string>
+    <string name="opname">Opname</string>
+    <string name="kdgd">KdGd</string>
+    <string name="sistem">Sistem</string>
+    <string name="lokasi_1">Lokasi 1</string>
+    <string name="lokasi_2">Lokasi 2</string>
+    <string name="lokasi_3">Lokasi 3</string>
+    <string name="pending">Pending</string>
+    <string name="nobukti">NoBukti</string>
+    <string name="qty">Qty</string>
+    <string name="satuan">Satuan</string>
+    <string name="hasil">Hasil</string>
+    <string name="fisik">Fisik</string>
+    <string name="selisih">Selisih</string>
+    <string name="sort">Urutkan</string>
+    <string name="peringatan">PERINGATAN</string>
+    <string name="ok">OK</string>
+    <string name="cancel_sales_order_ini">Batalkan sales order ini?</string>
+    <string name="tidak">TIDAK</string>
+    <string name="ya">YA</string>
+    <string name="downloading">Mengunduh…</string>
+    <string name="finished_downloading">Mohon tunggu hingga berkas apk selesai diunduh!</string>
+    <string name="error">ERROR</string>
+    <string name="exclude_ppn">Exclude PPN</string>
+    <string name="masukkan_password">Masukkan password…</string>
+    <string name="add_item">Tambah Item</string>
+    <string name="cancel_so">Batalkan SO</string>
+    <string name="create_sales_order">Buat sales order</string>
+    <string name="refresh">Segarkan</string>
+    <string name="sukses">SUKSES</string>
+    <string name="scan">Pindai</string>
+    <string name="open">Baru</string>
+    <string name="close_with_posting">Selesai dengan posting</string>
+    <string name="close_without_posting">Selesai tanpa posting</string>
+    <string name="modul">Modul</string>
+    <string name="akses">Akses</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="post">Post</string>
+    <string name="barcode_barang">Barcode barang</string>
+    <string name="draw_signature_here">Draw signature here</string>
+    <string name="all_sales_order">All sales order</string>
+    <string name="invoice_dicetak">Invoice dicetak</string>
+    <string name="tambah_ke_troli">Tambah ke troli</string>
+    <string name="hasil_timbangan">Hasil timbangan</string>
+    <string name="foto_produk">Foto produk</string>
+    <string name="proses">Proses</string>
+    <string name="selesai">Selesai</string>
+    <string name="list_timbangan">Daftar timbangan</string>
+    <string name="detail_timbangan">Detail timbangan</string>
+    <string name="list_opname">Daftar opname</string>
+    <string name="hak_akses_user">Hak akses userAkses</string>
+    <string name="informasi_barang">Informasi barang</string>
+    <string name="list_barang">Daftar barang</string>
+    <string name="my_customer">Customerku</string>
+    <string name="info_customer">Informasi customer</string>
+    <string name="detail">Detail</string>
+    <string name="penjualan">Penjualan</string>
+    <string name="pembelian">Pembelian</string>
+    <string name="history">Histori</string>
+    <string name="list_histori_penjualan">Daftar histori penjualan</string>
+    <string name="list_histori_pembelian">Daftar histori pembelian</string>
+    <string name="laporan">Laporan</string>
+    <string name="list_sales_order">Daftar sales order</string>
+    <string name="titik_koordinat">Titik koordinat :</string>
+    <string name="replace_koordinat">Titik koordinat customer sudah ada, ganti titik koordinat?</string>
+    <string name="currency_id">Rp  </string>
+    <string name="permission_denied">izin ditolak</string>
+    <string name="barang_disiapkan">Barang disiapkan</string>
+    <string name="proses_kirim">Proses kirim</string>
+    <string name="barang_diterima">Barang diterima</string>
+    <string name="dokumen_kembali">Dokumen kembali</string>
+    <string name="tidak_mempunyai_hak_akses">Anda tidak mempunyai hak akses</string>
+    <string name="profile">Profil</string>
+    <string name="logout">Logout</string>
+    <string name="change_password">Ubah password</string>
+    <string name="device">Perangkat</string>
+    <string name="android_version">Versi Android</string>
+    <string name="sdk_version">Versi SDK</string>
+    <string name="network_info">Info Jaringan</string>
+    <string name="old_password">Password lama</string>
+    <string name="new_password">Password baru</string>
+    <string name="confirm_password">Konfirmasi password</string>
+    <string name="peringatan_password">Password anda masih default, harap ubah password anda di tab profil</string>
+    <string name="select_pdf_from_storage">Pilih PDF dari penyimpanan</string>
+    <string name="select_from_gallery">Pilih foto dari galeri</string>
+    <string name="select_from_camera">Jepret foto dari kamera</string>
+    <string name="not_yet">* Belum terkirim</string>
+    <string name="partially_ship">* Pengiriman sebagian</string>
+    <string name="fully_ship">* Pengiriman penuh</string>
+    <string name="price_hpp">Harga Khusus</string>
+
+    <array name="gv_sales_text">
+        <item>Informasi Barang</item>
+        <item>My Customer</item>
+        <item>History</item>
+        <item>Laporan</item>
+        <item>Sales Order</item>
+        <item>Update Pricelist</item>
+    </array>
+    <array name="gv_warehouse_text">
+        <item>Stock Opname</item>
+        <item>List Timbangan</item>
+    </array>
+    <array name="gv_admin_text">
+        <item>User Management</item>
+    </array>
+    <array name="gv_sales_img">
+        <item>@drawable/ic_product_white_100</item>
+        <item>@drawable/ic_user_conference_white_100</item>
+        <item>@drawable/ic_history_pembelian_white_100</item>
+        <item>@drawable/ic_report_white_100</item>
+        <item>@drawable/ic_sales_order_white_100</item>
+        <item>@drawable/ic_price_tag_white_100</item>
+    </array>
+    <array name="gv_warehouse_img">
+        <item>@drawable/ic_stock_opname_white_100</item>
+        <item>@drawable/ic_scales_100</item>
+    </array>
+    <array name="gv_admin_img">
+        <item>@drawable/ic_user_manage_white_100</item>
+    </array>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="input_coordinate">Masukkan koordinat</string>
+    <string name="evaluasi">Evaluasi</string>
+    <string name="brand">Merk</string>
+    <string name="kredit_limit">Kredit Limit</string>
+    <string name="invoice_lunas">Invoice lunas</string>
+    <string name="error_pengambilan_data">Terjadi error saat pengambilan data dari Server! Coba lagi dan pastikan koneksi jaringan anda stabil</string>
+    <string name="tipe_specialprice">Tipe HargaKhusus</string>
+    <string name="qty_kuota">Qty Kuota</string>
+    <string name="end_date">Tgl Selesai</string>
+    <string name="start_date">Tgl Mulai</string>
+    <string name="sort_by">Urutkan berdasarkan</string>
+    <string name="tgl_po">Tanggal PO</string>
+    <string name="show_more">Tampilkan Lebih</string>
+    <string name="jenis_ppn">Jenis Ppn</string>
+    <string name="string_0">0</string>
+    <string name="string_pppn">PPPN</string>
+    <string name="string_pnbkp">PNBKP</string>
+    <string name="string_pbbs">PBBS</string>
+    <string name="string_blank">Kolom ini tidak boleh kosong!</string>
+    <string name="cost_price">Harga Pokok</string>
+    <string name="accept">Terima</string>
+    <string name="reject">Tolak</string>
+    <string name="alasan_oto">Alasan Oto</string>
+</resources>

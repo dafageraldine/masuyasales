@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheetPilihBarang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_dialog_round"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:background="@color/colorSecondary"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@id/view_line"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_shopping_cart_64"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_add_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableEnd="@drawable/ic_add_black"
+            android:drawableTint="@color/flatui_nephritis"
+            android:text="Add Pricelist"
+            android:gravity="end|center_vertical"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <com.yusuffahrudin.masuyamobileapp.util.EmptySearchView
+        android:id="@id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:background="#fff"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchview"
+        android:layout_above="@id/btn_ok"
+        android:layout_marginBottom="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/list_barang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@id/btn_cancel"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_toStartOf="@+id/btn_ok"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:id="@id/btn_ok"
+        android:textColor="@android:color/white"
+        android:background="@color/flatui_emerald"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+    <ProgressBar
+        android:id="@id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
